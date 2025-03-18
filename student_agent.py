@@ -4,6 +4,9 @@ import pickle
 import random
 import gym
 
+with open("taxi_table.pkl", "rb") as f:
+q_table_file = pickle.load(f)
+
 def get_action(obs):
     
     # TODO: Train your own agent
